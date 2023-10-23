@@ -52,7 +52,7 @@ public class Login extends JFrame implements MouseListener {
 
     private void initRegister(){
         registerButton.setBounds(270,300,128,47);
-        registerButton.setIcon(new ImageIcon(path+"注册按钮.png"));
+        registerButton.setIcon(new ImageIcon(path+"registerButton.png"));
         registerButton.setBorderPainted(false);
         registerButton.setContentAreaFilled(false);
 
@@ -62,7 +62,7 @@ public class Login extends JFrame implements MouseListener {
     }
     private void initLogin(){
         loginButton.setBounds(95,300,128,47);
-        loginButton.setIcon(new ImageIcon(path+"登录按钮.png"));//设置背景
+        loginButton.setIcon(new ImageIcon(path+"loginButton.png"));//设置背景
         loginButton.setBorderPainted(false);//取消默认边框
         loginButton.setContentAreaFilled(false);//取消默认背景
 
@@ -72,7 +72,7 @@ public class Login extends JFrame implements MouseListener {
     }
     private void initPasswd(){
         //密码
-        JLabel password = new JLabel(new ImageIcon(path+"密码.png"));
+        JLabel password = new JLabel(new ImageIcon(path+"passwd.png"));
         password.setBounds(70,200,47,17);
 
         passwd.setBounds(150,195,200,30);
@@ -82,7 +82,7 @@ public class Login extends JFrame implements MouseListener {
     }
     private void initUserName(){
         //用户名 图片
-        JLabel name = new JLabel(new ImageIcon(path+"用户名.png"));
+        JLabel name = new JLabel(new ImageIcon(path+"uname.png"));
         name.setBounds(70,150,47,17);
         //用户名输入框
         username.setBounds(150,145,200,30);
@@ -92,7 +92,7 @@ public class Login extends JFrame implements MouseListener {
     }
     private void initCaptcha(){
         //验证码
-        JLabel captcha =new JLabel(new ImageIcon(path+"验证码.png"));
+        JLabel captcha =new JLabel(new ImageIcon(path+"captcha.png"));
         captcha.setBounds(70,250,56,21);
         text.setBounds(150,245,100,30);
 
@@ -194,17 +194,17 @@ public class Login extends JFrame implements MouseListener {
     @Override
     public void mousePressed(MouseEvent e) {
         if (e.getSource() == loginButton) {
-            loginButton.setIcon(new ImageIcon(path+"登录按下.png"));
+            loginButton.setIcon(new ImageIcon(path+"loginOn.png"));
         }else if(e.getSource()==registerButton)
-            registerButton.setIcon(new ImageIcon(path+"注册按下.png"));
+            registerButton.setIcon(new ImageIcon(path+"registerOn.png"));
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
         if (e.getSource() == loginButton) {
-            loginButton.setIcon(new ImageIcon(path+"登录按钮.png"));
+            loginButton.setIcon(new ImageIcon(path+"loginButton.png"));
         } else if (e.getSource()==registerButton) {
-            registerButton.setIcon(new ImageIcon(path +"注册按钮.png"));
+            registerButton.setIcon(new ImageIcon(path +"registerButton.png"));
         }
     }
 

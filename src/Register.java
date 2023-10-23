@@ -34,7 +34,7 @@ public class Register extends JFrame implements MouseListener {
     }
 
     private void initName(){
-        JLabel name = new JLabel(new ImageIcon(path+"用户名.png"));
+        JLabel name = new JLabel(new ImageIcon(path+"uname.png"));
         name.setBounds(70,150,47,17);
         //用户名输入框
         username.setBounds(170,145,200,30);
@@ -52,7 +52,7 @@ public class Register extends JFrame implements MouseListener {
         this.getContentPane().add(passwd);
         this.getContentPane().add(password);
 
-        JLabel rePassword = new JLabel(new ImageIcon(path+"再次输入密码.png"));
+        JLabel rePassword = new JLabel(new ImageIcon(path+"rePasswd.png"));
         rePassword.setBounds(50,250,96,17);
         rePasswd.setBounds(170,245,200,30);
 
@@ -64,9 +64,9 @@ public class Register extends JFrame implements MouseListener {
 
     private void initButton(){
         register.setBounds(100,300,128,47);
-        register.setIcon(new ImageIcon(path+"注册按钮.png"));
+        register.setIcon(new ImageIcon(path+"registerButton.png"));
         clear.setBounds(270,300,128,47);
-        clear.setIcon(new ImageIcon(path+"重置按钮.png"));
+        clear.setIcon(new ImageIcon(path+"clear.png"));
 
         register.setBorderPainted(false);
         register.setContentAreaFilled(false);
@@ -119,18 +119,18 @@ public class Register extends JFrame implements MouseListener {
     @Override
     public void mousePressed(MouseEvent e) {
         if (e.getSource() == register) {
-            register.setIcon(new ImageIcon(path+"注册按下.png"));
+            register.setIcon(new ImageIcon(path+"registerOn.png"));
         }else if (e.getSource() == clear) {
-            clear.setIcon(new ImageIcon(path+"重置按下.png"));
+            clear.setIcon(new ImageIcon(path+"clearOn.png"));
         }
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
         if (e.getSource() == register) {
-            register.setIcon(new ImageIcon(path+"注册按钮.png"));
+            register.setIcon(new ImageIcon(path+"registerButton.png"));
         }else if (e.getSource() == clear) {
-            clear.setIcon(new ImageIcon(path+"重置按钮.png"));
+            clear.setIcon(new ImageIcon(path+"clear.png"));
         }
     }
 
