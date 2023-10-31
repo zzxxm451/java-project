@@ -37,7 +37,7 @@ public class Game extends JFrame implements KeyListener, ActionListener {
 
     }
     String[] pathway = {"animal","girl","sport"};
-    String path = "image\\";
+    String path = "app\\image\\";
     int r = random.nextInt(3);
     int a;
     private void ran() {

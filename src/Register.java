@@ -11,7 +11,7 @@ public class Register extends JFrame implements MouseListener {
         this.setVisible(true);
     }
 
-    String path="image\\register\\";
+    String path="app\\image\\register\\";
     JButton register=new JButton();
     JButton clear=new JButton();
     JTextField username = new JTextField();

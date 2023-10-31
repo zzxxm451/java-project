@@ -15,7 +15,7 @@ public class Login extends JFrame implements MouseListener {
         this.setVisible(true);
     }
 
-    String path = "image\\login\\";
+    String path = "app\\image\\login\\";
     JButton loginButton=new JButton();
     JButton registerButton=new JButton();
     JLabel textContent =new JLabel();
